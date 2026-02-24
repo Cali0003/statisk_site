@@ -1,0 +1,78 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+/************ Farver **************/
+html {
+  --dark-grey: #2c2c2c;
+  --light-grey: #a3a398;
+  --creme: #d3d4ba;
+  --blue: #70c2e5;
+}
+
+/**************** Baggrundsfarve ******************/
+body {
+  background-color: var(--creme);
+}
+
+/**************** Layout Mobil ******************/
+
+.productlist {
+  gap: 30px;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.card-productlist {
+  border: 2px solid var(--dark-grey);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+/**************** Layout Web ******************/
+
+@media (min-width: 840px) {
+  .productlist {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 50px;
+  }
+
+  .card-productlist {
+    border: 2px solid var(--dark-grey);
+    border-radius: 20px;
+    padding: 20px;
+  }
+}
+
+/**************** Knap ******************/
+.knap {
+  display: inline-block; /* Gør linket til en "knap" */
+  font-family: "Bowlby One", sans-serif;
+  background-color: var(--blue);
+  color: var(--dark-grey);
+  border: 2px solid var(--dark-grey);
+  border-radius: 20px;
+  padding: 5px 10px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.knap:hover {
+  background-color: var(--creme);
+}
