@@ -135,7 +135,7 @@ p {
 
 .product-text {
   display: grid;
-  grid-template-columns: subgrid;
+  grid-template-rows: subgrid;
   text-align: left;
   justify-self: start; /* starter helt ude til venstre */
 }
@@ -164,7 +164,7 @@ p {
     margin: 0 auto;
   }
 
-  .container-product {
+  #productContainer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -175,14 +175,14 @@ p {
     padding: 20px;
   }
 
-  .container-product img {
+  #productContainer img {
     max-width: 500px;
     width: 100%;
     height: auto;
   }
 
   .product-text {
-    padding: 50px;
+    padding: 20px;
   }
 
   .h1-product {
