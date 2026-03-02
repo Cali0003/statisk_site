@@ -19,6 +19,7 @@ html {
   --light-grey: #a3a398;
   --creme: #d3d4ba;
   --blue: #63a9c7;
+  --dark-blue: #14759f;
   --red: rgb(192, 32, 32);
   --green: rgb(81, 187, 72);
 }
@@ -70,6 +71,7 @@ p {
   color: var(--light-grey);
   font-size: 1.2rem;
 }
+
 /**************** Layout Mobil ******************/
 
 .product_list_container {
@@ -158,7 +160,7 @@ p {
     display: grid;
     grid-template-rows: subgrid;
     grid-row: span 5;
-    gap: 6px;
+    gap: 15px;
     border: 2px var(--dark-grey) solid;
     padding: 10px;
   }
@@ -182,6 +184,7 @@ p {
 
   .product-text {
     padding: 20px;
+    gap: 20px;
   }
 
   .h1-product {
@@ -195,18 +198,45 @@ p {
   font-family: "Bowlby One", sans-serif;
   background-color: var(--blue);
   color: var(--dark-grey);
-  border: 2px solid var(--dark-grey);
-  border-radius: 20px;
-  padding: 5px 10px;
+
+  border-radius: 15px;
+  padding: 10px 20px;
   text-decoration: none;
   transition: 0.3s;
   justify-self: start;
-  justify-self: center;
+
   align-self: end;
+
+  font-family: "Bebas Neue", sans-serif;
+  margin-top: 20px;
 }
 
 .knap:hover {
-  background-color: var(--creme);
+  background-color: var(--dark-blue);
+  color: var(--creme);
+}
+
+.knap_buy {
+  display: inline-block; /* Gør linket til en "knap" */
+  font-family: "Bowlby One", sans-serif;
+  background-color: var(--blue);
+  color: var(--dark-grey);
+
+  border-radius: 15px;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: 0.3s;
+  justify-self: start;
+
+  align-self: end;
+
+  font-family: "Bebas Neue", sans-serif;
+  margin-top: 20px;
+}
+
+.knap_buy:hover {
+  background-color: var(--dark-blue);
+  color: var(--creme);
 }
 /**************** Card forside ******************/
 .card-container {
