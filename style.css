@@ -62,13 +62,13 @@ h2 {
 
 h3 {
   font-family: "Bebas Neue", sans-serif;
-  color: var(--dark-grey);
+  color: var(--light-grey);
   font-size: 1.3rem;
 }
 
 p {
   font-family: "Bebas Neue", sans-serif;
-  color: var(--light-grey);
+  color: var(--dark-grey);
   font-size: 1.2rem;
 }
 
@@ -78,16 +78,15 @@ p {
   gap: 30px;
   max-width: 600px;
   margin: 0 auto;
-  padding: 50px;
+  padding: 0 0 50px 0;
 }
 
 .product-card {
   border: 2px solid var(--dark-grey);
-  padding: 20px;
-}
-
-.product-card {
+  padding: 0 0 20px 0;
   position: relative;
+  overflow: hidden;
+  height: 400px;
 }
 
 .sale-badge {
@@ -195,12 +194,11 @@ p {
 /**************** Knap ******************/
 .knap {
   display: inline-block; /* Gør linket til en "knap" */
-  font-family: "Bowlby One", sans-serif;
   background-color: var(--blue);
   color: var(--dark-grey);
 
   border-radius: 15px;
-  padding: 10px 20px;
+  padding: 8px 30px;
   text-decoration: none;
   transition: 0.3s;
   justify-self: start;
@@ -218,18 +216,14 @@ p {
 
 .knap_buy {
   display: inline-block; /* Gør linket til en "knap" */
-  font-family: "Bowlby One", sans-serif;
   background-color: var(--blue);
   color: var(--dark-grey);
-
   border-radius: 15px;
   padding: 10px 20px;
   text-decoration: none;
   transition: 0.3s;
   justify-self: start;
-
   align-self: end;
-
   font-family: "Bebas Neue", sans-serif;
   margin-top: 20px;
 }
@@ -238,6 +232,30 @@ p {
   background-color: var(--dark-blue);
   color: var(--creme);
 }
+
+#sortByPriceBtn,
+#filterWomenBtn,
+#showAllBtn {
+  display: inline-block; /* Gør linket til en "knap" */
+  background-color: var(--blue);
+  color: var(--dark-grey);
+  border-radius: 15px;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.knap-container {
+  margin: 20px 0 40px 40px;
+}
+
+#sortByPriceBtn:hover,
+#filterWomenBtn:hover,
+#showAllBtn:hover {
+  background-color: var(--dark-blue);
+  color: var(--creme);
+}
+
 /**************** Card forside ******************/
 .card-container {
   display: grid;
@@ -245,6 +263,10 @@ p {
   padding: 20px;
   max-width: 800px;
   width: 100%;
+}
+
+.card-container h3 {
+  color: var(--dark-grey);
 }
 
 .card-forside {
